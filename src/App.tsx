@@ -1,11 +1,11 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { Stack, Box, Center, Text, Button, Space, useMantineTheme, CopyButton, ActionIcon, Tooltip, Title, ScrollArea } from '@mantine/core';
-import { useState } from 'react';
+import React from 'react';
 import { IconCheck, IconCopy } from '@tabler/icons-react';
 
 function App() {
   const theme = useMantineTheme();
-  const [transcripts, setTranscripts] = useState<string[]>([]);
+  const [transcripts, setTranscripts] = React.useState<string[]>([]);
   const {
   transcript,
   listening,
