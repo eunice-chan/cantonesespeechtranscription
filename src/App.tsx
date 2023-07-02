@@ -1,5 +1,5 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import { Stack, Box, Center, Text, Button, Space, useMantineTheme, MantineProvider, Textarea, CopyButton, ActionIcon, Tooltip, Title, ScrollArea } from '@mantine/core';
+import { Stack, Box, Center, Text, Button, Space, useMantineTheme, CopyButton, ActionIcon, Tooltip, Title, ScrollArea } from '@mantine/core';
 import { useState } from 'react';
 import { IconCheck, IconCopy } from '@tabler/icons-react';
 

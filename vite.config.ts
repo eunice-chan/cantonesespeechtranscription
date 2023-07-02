@@ -4,6 +4,7 @@ import babel from 'vite-plugin-babel'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/cantonesespeechtranscription/",
   plugins: [
     babel({
       babelConfig: {
