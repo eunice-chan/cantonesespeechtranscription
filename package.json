@@ -2,7 +2,7 @@
   "name": "cantonesespeechtranscription",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,26 +12,35 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@babel/runtime": "^7.22.5",
     "@tabler/icons-react": "^2.23.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-speech-recognition": "^3.10.0",
+    "@babel/plugin-transform-runtime": "^7.22.5"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
-    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@babel/plugin-transform-modules-amd": "^7.22.5",
+    "@babel/plugin-transform-modules-systemjs": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
     "@mantine/core": "^6.0.15",
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@types/react-speech-recognition": "^3.9.2",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "babel-loader": "^9.1.2",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "gh-pages": "^5.0.0",
-    "react-speech-recognition": "^3.10.0",
-    "typescript": "^5.0.2",
+    "source-map-loader": "^4.0.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "vite": "^4.3.9",
     "vite-plugin-babel": "^1.1.3"
   }

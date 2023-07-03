@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import babel from 'vite-plugin-babel'
+import { esbuildCommonjs } from '@originjs/vite-plugin-commonjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,6 +14,16 @@ export default defineConfig({
         plugins: ['@babel/plugin-transform-runtime']
       }
     }),
-    react()
+    react(),
   ],
+  optimizeDeps: {
+    disabled: false,
+  },
+  build: {
+    commonjsOptions: {
+      include: [],
+      transformMixedEsModules: true,
+    },
+  }
+  
 })
